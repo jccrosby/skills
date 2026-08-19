@@ -1,0 +1,39 @@
+name: Sync to GitLab
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Mirror repository to GitLab
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${GITLAB_TOKEN}" ]; then
+            echo "Missing GITLAB_TOKEN secret. Add the token in GitHub repository secrets."
+            exit 1
+          fi
+
+          git remote remove gitlab >/dev/null 2>&1 || true
+          git remote add gitlab "https://oauth2:${GITLAB_TOKEN}@gitlab.com/jccrosby/skills.git"
+          git push --force --mirror gitlab
