@@ -1,0 +1,3 @@
+interface:
+  display_name: 'documentation-create'
+  short_description: 'Invoke when writing, reviewing, or planning technical documentation. Coaches subject matter experts through contributing their knowledge, and applies professional technical writing standards automatically.'

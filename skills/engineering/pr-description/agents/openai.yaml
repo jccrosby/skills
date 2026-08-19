@@ -1,0 +1,3 @@
+interface:
+  display_name: 'pr-description'
+  short_description: 'Drafts GitHub pull request bodies from the current branch using this repo\'s PULL_REQUEST_TEMPLATE.md. Use when the user asks for a PR description, PR body, opening a pull request, or running gh pr create for paywall-contentful-migrations.'

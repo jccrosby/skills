@@ -1,0 +1,3 @@
+interface:
+  display_name: 'conventional-commit'
+  short_description: 'Generate a Conventional Commit message based on a git diff. Ensures messages are atomic, descriptive, and follow project-specific standards.'

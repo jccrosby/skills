@@ -1,0 +1,3 @@
+interface:
+  display_name: 'pr-review'
+  short_description: 'Generate a structured PR review outline comparing two branches. Use when reviewing a pull request for KISS compliance, context alignment, evidence of safety, and standard code quality metrics. Does not write PR comments — produces a structured report for the human reviewer.'

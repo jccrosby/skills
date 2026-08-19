@@ -1,0 +1,3 @@
+interface:
+  display_name: 'generate-readme'
+  short_description: 'Generates a comprehensive project README.md based on the local .ai brain and codebase analysis.'

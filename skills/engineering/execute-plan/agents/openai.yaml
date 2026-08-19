@@ -1,0 +1,3 @@
+interface:
+  display_name: 'execute-plan'
+  short_description: 'Step-by-step implementation of an iterative plan. Enforces atomic commits, state tracking, and mandatory human-in-the-loop checkpoints.'
