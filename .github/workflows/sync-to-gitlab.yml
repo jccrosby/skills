@@ -35,7 +35,7 @@ jobs:
           fi
 
           rm -rf /tmp/skills-gitlab-mirror
-          git clone --bare "https://github.com/jccrosby/skills.git" /tmp/skills-gitlab-mirror
+          git clone --bare "$GITHUB_WORKSPACE" /tmp/skills-gitlab-mirror
           git -C /tmp/skills-gitlab-mirror remote remove gitlab >/dev/null 2>&1 || true
           git -C /tmp/skills-gitlab-mirror remote add gitlab "https://oauth2:${GITLAB_TOKEN}@gitlab.com/jccrosby/skills.git"
-          git -C /tmp/skills-gitlab-mirror push --force --mirror gitlab
+          git -C /tmp/skills-gitlab-mirror push --force --prune gitlab 'refs/heads/*:refs/heads/*' 'refs/tags/*:refs/tags/*'
