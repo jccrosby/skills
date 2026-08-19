@@ -34,6 +34,8 @@ jobs:
             exit 1
           fi
 
-          git remote remove gitlab >/dev/null 2>&1 || true
-          git remote add gitlab "https://oauth2:${GITLAB_TOKEN}@gitlab.com/jccrosby/skills.git"
-          git push --force --mirror gitlab
+          rm -rf /tmp/skills-gitlab-mirror
+          git clone --bare "https://github.com/jccrosby/skills.git" /tmp/skills-gitlab-mirror
+          git -C /tmp/skills-gitlab-mirror remote remove gitlab >/dev/null 2>&1 || true
+          git -C /tmp/skills-gitlab-mirror remote add gitlab "https://oauth2:${GITLAB_TOKEN}@gitlab.com/jccrosby/skills.git"
+          git -C /tmp/skills-gitlab-mirror push --force --mirror gitlab
