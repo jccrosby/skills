@@ -37,7 +37,7 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm run version
-          publish: pnpm dlx changeset tag
+          publish: pnpm dlx changeset git-tag
           commit: 'chore: version skills'
           title: 'chore: version skills'
         env:
