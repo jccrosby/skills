@@ -7,6 +7,7 @@ This directory documents the skills in this repository and mirrors the skill lay
 - [audit-repo](engineering/audit-repo/README.md)
 - [conventional-commit](engineering/conventional-commit/README.md)
 - [adr-create](engineering/adr-create/README.md)
+- [adr-revise](engineering/adr-revise/README.md)
 - [documentation-create](engineering/documentation-create/README.md)
 - [execute-plan](engineering/execute-plan/README.md)
 - [iterative-plan](engineering/iterative-plan/README.md)

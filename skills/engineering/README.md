@@ -52,6 +52,10 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
   - Typical invocation: "Use the `adr-create` skill to draft an ADR for moving the service to async processing."
   - Expected output: A markdown ADR draft with context, decision rationale, options, consequences, and open questions.
 
+- `adr-revise` — Revises an existing ADR from reviewer feedback by creating a small, reviewable plan, waiting for user approval, and then updating the ADR in place.
+  - Typical invocation: "Use the `adr-revise` skill to address the comments on docs/adrs/20260820-foo.md and update the ADR only after I review the plan."
+  - Expected output: A concrete revision plan, user approval checkpoint, and the final ADR update with any remaining follow-up notes.
+
 - `readme-generate` — Produces a project README from repository context, project goals, and codebase structure.
   - Typical invocation: "Use the `readme-generate` skill to draft a README for this service."
   - Expected output: A new project README with overview, architecture, setup instructions, and agent workflow guidance.
