@@ -1,0 +1,3 @@
+interface:
+  display_name: 'wait-what'
+  short_description: 'Re-pitch a previous answer in ASD-STE100 Simplified Technical English from the current project perspective.'

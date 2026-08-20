@@ -39,7 +39,9 @@ The most effective pattern is:
 
 ## Current status
 
-There are no productivity skills in this folder yet. This README acts as the index and onboarding document for future additions.
+The productivity folder now includes the following skill:
+
+- `wait-what` — Re-pitch a previous answer, recommendation, or proposal in ASD-STE100 Simplified Technical English from the perspective of the current project.
 
 When a skill is added, it should be summarized here with:
 
