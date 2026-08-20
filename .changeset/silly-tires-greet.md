@@ -1,6 +1,5 @@
 ---
-"jccrosby-skills": patch
+'jccrosby-skills': patch
 ---
 
 adding ci/cd workflow
-  
