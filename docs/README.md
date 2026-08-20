@@ -4,6 +4,7 @@ This directory documents the skills in this repository and mirrors the skill lay
 
 ## Available skill docs
 
+- [prompt-create](productivity/prompt-create/README.md)
 - [audit-repo](engineering/audit-repo/README.md)
 - [conventional-commit](engineering/conventional-commit/README.md)
 - [adr-create](engineering/adr-create/README.md)
