@@ -1,0 +1,27 @@
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Package-manager and tool state
+.pnpm-debug.log
+
+# Editor and OS metadata
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.swp
