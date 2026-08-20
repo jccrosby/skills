@@ -18,8 +18,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -35,14 +33,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Confirm release token
-        run: |
-          if [ -n "${{ secrets.REPO_AUTH_TOKEN }}" ]; then
-            echo "Using REPO_AUTH_TOKEN secret for PR creation."
-          else
-            echo "REPO_AUTH_TOKEN is not set; falling back to GITHUB_TOKEN. If your org blocks Actions PR creation, add a PAT to this repo secret."
-          fi
-
       - name: Create Version Pull Request
         uses: changesets/action@v1
         with:
@@ -50,7 +40,5 @@ jobs:
           publish: pnpm dlx changeset git-tag
           commit: 'chore: version skills'
           title: 'chore: version skills'
-          github-token: ${{ secrets.REPO_AUTH_TOKEN || github.token }}
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_AUTH_TOKEN || github.token }}
-          GH_TOKEN: ${{ secrets.REPO_AUTH_TOKEN || github.token }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
