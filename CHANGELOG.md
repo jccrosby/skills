@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 1.0.5
+
+### Patch Changes
+
+- [#9](https://github.com/jccrosby/skills/pull/9) [`c973fa8`](https://github.com/jccrosby/skills/commit/c973fa8d0c9ea2ef1ddfeb48ab8c759b1ae96656) Thanks [@jccrosby](https://github.com/jccrosby)! - Removes the wait-what skill
+
 ## 1.0.4
 
 ### Patch Changes
