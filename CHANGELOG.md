@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 1.0.2
+
+### Patch Changes
+
+- [#3](https://github.com/jccrosby/skills/pull/3) [`6dc6427`](https://github.com/jccrosby/skills/commit/6dc6427203ced2384dc41ac5487f4578f60afb16) Thanks [@jccrosby](https://github.com/jccrosby)! - adds create-prompt skill
+
 ## 1.0.1
 
 ### Patch Changes
