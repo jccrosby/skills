@@ -17,6 +17,7 @@ This directory documents the skills in this repository and mirrors the skill lay
 - [pr-description](engineering/pr-description/README.md)
 - [readme-generate](engineering/readme-generate/README.md)
 - [readme-update](engineering/readme-update/README.md)
+- [language-simplify](productivity/language-simplify/README.md)
 
 ## How to use this documentation
 

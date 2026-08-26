@@ -1,0 +1,3 @@
+interface:
+  display_name: 'language-simplify'
+  short_description: 'Simplify a prompt while preserving its intent, requirements, and technical details.'
