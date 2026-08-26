@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 1.0.4
+
+### Patch Changes
+
+- [#7](https://github.com/jccrosby/skills/pull/7) [`c714a53`](https://github.com/jccrosby/skills/commit/c714a53981f4bc55d3f3b4ea8dfc09533e103ec8) Thanks [@jccrosby](https://github.com/jccrosby)! - Renames the plan skills
+
 ## 1.0.3
 
 ### Patch Changes
