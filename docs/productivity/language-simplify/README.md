@@ -28,4 +28,4 @@ It follows plain-language rules based on ASD-STE100 and Federal Plain Language G
 
 ## Where it fits
 
-This skill works as a standalone rewrite step before another prompt-driven task. Use [wait-what](../wait-what/README.md) when you need to reframe a previous answer for a project, not simplify a prompt.
+This skill works as a standalone rewrite step before another prompt-driven task.
