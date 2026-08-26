@@ -10,7 +10,7 @@ The skill simplifies wording without reducing the prompt's scope. It also flags 
 
 You invoke this skill by typing `/language-simplify`, and the agent will not reach for it on its own.
 
-Reach for it when a prompt feels long, vague, repetitive, technical, or difficult to scan. For a new workflow, use [iterative-plan](../../engineering/iterative-plan/README.md) instead.
+Reach for it when a prompt feels long, vague, repetitive, technical, or difficult to scan. For a new workflow, use [plan-iterative](../../engineering/plan-iterative/README.md) instead.
 
 ## What it preserves
 

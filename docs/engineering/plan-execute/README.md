@@ -1,4 +1,4 @@
-# Execute plan
+# Plan execute
 
 ## Purpose
 

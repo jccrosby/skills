@@ -43,7 +43,7 @@ A few bullets naming what the reader sees when the skill is doing its job. The b
 
 Always present. Situate the skill in the system in a sentence or two:
 
-- **Role.** Name it: a **chain step** (`iterative-plan → execute-plan → documentation-create`), a **run-once setup**, **periodic maintenance** (`audit-repo`, "every few days"), or a **reach-for-it-anytime standalone** (`pr-review`, `pr-description`, `adr-create`). A standalone's map is one honest sentence, which is far better than omitting the section.
+- **Role.** Name it: a **chain step** (`plan-iterative → plan-execute → documentation-create`), a **run-once setup**, **periodic maintenance** (`audit-repo`, "every few days"), or a **reach-for-it-anytime standalone** (`pr-review`, `pr-description`, `adr-create`). A standalone's map is one honest sentence, which is far better than omitting the section.
 - **Neighbors.** The one or two siblings that matter, each with a because-clause, linked absolutely.
 
 </page-template>
