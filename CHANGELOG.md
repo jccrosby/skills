@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 1.0.3
+
+### Patch Changes
+
+- [`3ad6046`](https://github.com/jccrosby/skills/commit/3ad6046d70e709f171ae0f1d18d1c4efccc4eedd) Thanks [@jccrosby](https://github.com/jccrosby)! - Rename micro-audit to audit-micro
+
 ## 1.0.2
 
 ### Patch Changes
