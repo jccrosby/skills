@@ -39,9 +39,10 @@ The most effective pattern is:
 
 ## Current status
 
-The productivity folder now includes the following skill:
+The productivity folder now includes the following skills:
 
 - `wait-what` — Re-pitch a previous answer, recommendation, or proposal in ASD-STE100 Simplified Technical English from the perspective of the current project.
+- `language-simplify` — Simplify a user-provided prompt while preserving its intent, requirements, and technical details.
 
 When a skill is added, it should be summarized here with:
 
