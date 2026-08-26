@@ -1,10 +1,10 @@
 ---
-name: execute-plan
+name: plan-execute
 description: 'Step-by-step implementation of an iterative plan. Enforces atomic commits, state tracking, and mandatory human-in-the-loop checkpoints.'
 argument-hint: '<link to plan or current step description>'
 ---
 
-# SKILL: execute-plan
+# SKILL: plan-execute
 
 ## 🎯 OBJECTIVE
 

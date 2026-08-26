@@ -33,8 +33,8 @@ Examples include:
 
 - `audit-repo`
 - `audit-micro`
-- `iterative-plan`
-- `execute-plan`
+- `plan-iterative`
+- `plan-execute`
 - `documentation-create`
 - `adr-create`
 - `readme-generate`
@@ -66,7 +66,7 @@ This repo follows a few core principles:
 A typical invocation looks like this:
 
 - "Use the `documentation-create` skill to draft a setup guide for the deployment flow."
-- "Use the `iterative-plan` skill to break this migration into safe milestones."
+- "Use the `plan-iterative` skill to break this migration into safe milestones."
 - "Use the `conventional-commit` skill for this git diff and generate the commit message."
 
 ## Contribution approach

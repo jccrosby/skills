@@ -1,4 +1,4 @@
-# Iterative plan
+# Plan iterative
 
 ## Purpose
 

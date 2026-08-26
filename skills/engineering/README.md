@@ -9,7 +9,7 @@ Use these skills when a task matches the trigger described in the relevant `SKIL
 For a human or model, the pattern should look like this:
 
 - "Use the `audit-repo` skill to review the auth service directory."
-- "Run the `iterative-plan` skill for the migration work and break it into 3-5 steps."
+- "Run the `plan-iterative` skill for the migration work and break it into 3-5 steps."
 - "Use the `conventional-commit` skill for this git diff before I commit."
 
 Good invocations are narrow, task-based, and output-oriented. They tell the skill:
@@ -34,12 +34,12 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
 
 ### Planning and execution
 
-- `iterative-plan` — Breaks a large task into a short execution roadmap of 3-5 sequential, testable steps. Use before implementation starts.
-  - Typical invocation: "Use the `iterative-plan` skill to break this API migration into a safe step-by-step roadmap."
+- `plan-iterative` — Breaks a large task into a short execution roadmap of 3-5 sequential, testable steps. Use before implementation starts.
+  - Typical invocation: "Use the `plan-iterative` skill to break this API migration into a safe step-by-step roadmap."
   - Expected output: A short implementation plan with success criteria for each step.
 
-- `execute-plan` — Carries out the current step of an implementation plan while keeping scope tight and requiring human approval before moving on.
-  - Typical invocation: "Use the `execute-plan` skill for step 2 of the migration plan and keep the change scoped."
+- `plan-execute` — Carries out the current step of an implementation plan while keeping scope tight and requiring human approval before moving on.
+  - Typical invocation: "Use the `plan-execute` skill for step 2 of the migration plan and keep the change scoped."
   - Expected output: A small implementation change, verification notes, and a request for review before the next step.
 
 ### Documentation and decision-making
@@ -84,8 +84,8 @@ When choosing a skill, start with the task, not the folder:
 
 - If the work is architectural or broad: use `audit-repo`.
 - If the work is a one-file review: use `audit-micro`.
-- If the work is large and ambiguous: use `iterative-plan`.
-- If the work is implementation-focused: use `execute-plan`.
+- If the work is large and ambiguous: use `plan-iterative`.
+- If the work is implementation-focused: use `plan-execute`.
 - If the work is documentation or decision records: use `documentation-create` or `adr-create`.
 - If the work is review or delivery: use `pr-review`, `pr-description`, or `conventional-commit`.
 
