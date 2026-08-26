@@ -41,6 +41,7 @@ The most effective pattern is:
 
 The productivity folder now includes the following skills:
 
+- `prompt-create` — Reviews and refines rough requests into focused, reusable model prompts, including clarification, persona, and scope guidance.
 - `wait-what` — Re-pitch a previous answer, recommendation, or proposal in ASD-STE100 Simplified Technical English from the perspective of the current project.
 - `language-simplify` — Simplify a user-provided prompt while preserving its intent, requirements, and technical details.
 
