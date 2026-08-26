@@ -28,8 +28,8 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
   - Typical invocation: "Use the `audit-repo` skill on the payments feature and flag any risks or rule violations."
   - Expected output: A prioritized findings table with file locations, issue types, severity, and recommended fixes.
 
-- `micro-audit` — Performs a high-density review of a single file or small unit. Use when looking for KISS problems, missing edge cases, DRY/YAGNI issues, or unintended side effects.
-  - Typical invocation: "Use the `micro-audit` skill on `src/handlers/user.ts` and focus on correctness and simplicity."
+- `audit-micro` — Performs a high-density review of a single file or small unit. Use when looking for KISS problems, missing edge cases, DRY/YAGNI issues, or unintended side effects.
+  - Typical invocation: "Use the `audit-micro` skill on `src/handlers/user.ts` and focus on correctness and simplicity."
   - Expected output: A concise list of logic issues, refactor opportunities, and necessary fixes.
 
 ### Planning and execution
@@ -83,7 +83,7 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
 When choosing a skill, start with the task, not the folder:
 
 - If the work is architectural or broad: use `audit-repo`.
-- If the work is a one-file review: use `micro-audit`.
+- If the work is a one-file review: use `audit-micro`.
 - If the work is large and ambiguous: use `iterative-plan`.
 - If the work is implementation-focused: use `execute-plan`.
 - If the work is documentation or decision records: use `documentation-create` or `adr-create`.
