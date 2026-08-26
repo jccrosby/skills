@@ -12,7 +12,7 @@ This directory documents the skills in this repository and mirrors the skill lay
 - [documentation-create](engineering/documentation-create/README.md)
 - [execute-plan](engineering/execute-plan/README.md)
 - [iterative-plan](engineering/iterative-plan/README.md)
-- [micro-audit](engineering/micro-audit/README.md)
+- [audit-micro](engineering/audit-micro/README.md)
 - [pr-review](engineering/pr-review/README.md)
 - [pr-description](engineering/pr-description/README.md)
 - [readme-generate](engineering/readme-generate/README.md)

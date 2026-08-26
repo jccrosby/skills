@@ -32,7 +32,7 @@ The engineering skills cover common workflows such as:
 Examples include:
 
 - `audit-repo`
-- `micro-audit`
+- `audit-micro`
 - `iterative-plan`
 - `execute-plan`
 - `documentation-create`
