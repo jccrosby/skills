@@ -1,5 +1,18 @@
 # jccrosby-skills
 
+## 3.0.0
+
+### Major Changes
+
+- [`e3e436b`](https://github.com/jccrosby/skills/commit/e3e436b63f70a53b79bdd3a1c553227ef02ecae5) Thanks [@jccrosby](https://github.com/jccrosby)! - Renamed jccrosby -> crosby
+
+### Patch Changes
+
+- [`a12e5f5`](https://github.com/jccrosby/skills/commit/a12e5f581e3f0b36c58f3b14ad66ab3de118c06c) Thanks [@jccrosby](https://github.com/jccrosby)! - Use the `crosby-` prefix for all skill names, display names, and folders.
+  Update documentation folders, links, and invocation examples to match.
+  The skills CLI uses declared names when installing, so folder prefixes alone do not apply.
+  Remove previous installations under unprefixed or `jccrosby-` names before reinstalling from the updated GitHub repository.
+
 ## 2.0.0
 
 ### Major Changes
