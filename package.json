@@ -1,5 +1,5 @@
 {
-  "name": "jccrosby-skills",
+  "name": "@jccrosby/skills",
   "private": true,
   "version": "2.0.0",
   "description": "John Crosby's agent skills",
@@ -14,6 +14,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
