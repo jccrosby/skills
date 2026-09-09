@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 2.0.0
+
+### Major Changes
+
+- [`0693a3e`](https://github.com/jccrosby/skills/commit/0693a3ec3b76837964d503c37e64fa1548437a45) Thanks [@jccrosby](https://github.com/jccrosby)! - BREAKING CHANGE: Relocated the skills into prefixed directories
+
 ## 1.0.5
 
 ### Patch Changes
