@@ -4,20 +4,20 @@ This directory documents the skills in this repository and mirrors the skill lay
 
 ## Available skill docs
 
-- [prompt-create](productivity/prompt-create/README.md)
-- [audit-repo](engineering/audit-repo/README.md)
-- [conventional-commit](engineering/conventional-commit/README.md)
-- [adr-create](engineering/adr-create/README.md)
-- [adr-revise](engineering/adr-revise/README.md)
-- [documentation-create](engineering/documentation-create/README.md)
-- [plan-execute](engineering/plan-execute/README.md)
-- [plan-iterative](engineering/plan-iterative/README.md)
-- [audit-micro](engineering/audit-micro/README.md)
-- [pr-review](engineering/pr-review/README.md)
-- [pr-description](engineering/pr-description/README.md)
-- [readme-generate](engineering/readme-generate/README.md)
-- [readme-update](engineering/readme-update/README.md)
-- [language-simplify](productivity/language-simplify/README.md)
+- [jccrosby-prompt-create](productivity/jccrosby-prompt-create/README.md)
+- [jccrosby-audit-repo](engineering/jccrosby-audit-repo/README.md)
+- [jccrosby-conventional-commit](engineering/jccrosby-conventional-commit/README.md)
+- [jccrosby-adr-create](engineering/jccrosby-adr-create/README.md)
+- [jccrosby-adr-revise](engineering/jccrosby-adr-revise/README.md)
+- [jccrosby-documentation-create](engineering/jccrosby-documentation-create/README.md)
+- [jccrosby-plan-execute](engineering/jccrosby-plan-execute/README.md)
+- [jccrosby-plan-iterative](engineering/jccrosby-plan-iterative/README.md)
+- [jccrosby-audit-micro](engineering/jccrosby-audit-micro/README.md)
+- [jccrosby-pr-review](engineering/jccrosby-pr-review/README.md)
+- [jccrosby-pr-description](engineering/jccrosby-pr-description/README.md)
+- [jccrosby-readme-generate](engineering/jccrosby-readme-generate/README.md)
+- [jccrosby-readme-update](engineering/jccrosby-readme-update/README.md)
+- [jccrosby-language-simplify](productivity/jccrosby-language-simplify/README.md)
 
 ## How to use this documentation
 

@@ -5,7 +5,7 @@ description: Drafts GitHub pull request bodies from the current branch using thi
 
 # Pull request description
 
-Produce a PR body that matches [.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md). Base analysis on the **current working branch** unless the user names another branch or base.
+Produce a PR body that matches [PULL_REQUEST_TEMPLATE.md](./PULL_REQUEST_TEMPLATE.md). Base analysis on the **current working branch** unless the user names another branch or base.
 
 ## Gather context
 
