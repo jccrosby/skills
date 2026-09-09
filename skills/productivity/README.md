@@ -41,8 +41,8 @@ The most effective pattern is:
 
 The productivity folder now includes the following skills:
 
-- `prompt-create` — Reviews and refines rough requests into focused, reusable model prompts, including clarification, persona, and scope guidance.
-- `language-simplify` — Simplify a user-provided prompt while preserving its intent, requirements, and technical details.
+- `crosby-prompt-create` — Reviews and refines rough requests into focused, reusable model prompts, including clarification, persona, and scope guidance.
+- `crosby-language-simplify` — Simplify a user-provided prompt while preserving its intent, requirements, and technical details.
 
 When a skill is added, it should be summarized here with:
 

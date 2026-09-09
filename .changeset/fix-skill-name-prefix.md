@@ -2,6 +2,7 @@
 "@jccrosby/skills": patch
 ---
 
-Fix skill names and display names to match their existing `jccrosby-` folder names.
-The skills CLI uses declared names when installing, so folder prefixes alone did not apply.
-Existing installations under unprefixed names need removal and reinstallation after this fix reaches GitHub.
+Use the `crosby-` prefix for all skill names, display names, and folders.
+Update documentation folders, links, and invocation examples to match.
+The skills CLI uses declared names when installing, so folder prefixes alone do not apply.
+Remove previous installations under unprefixed or `jccrosby-` names before reinstalling from the updated GitHub repository.

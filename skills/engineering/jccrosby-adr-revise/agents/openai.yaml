@@ -1,3 +1,0 @@
-interface:
-  display_name: 'jccrosby-adr-revise'
-  short_description: 'Revise an existing ADR from reviewer feedback by proposing a change plan, letting the user review it, and then applying the approved updates.'

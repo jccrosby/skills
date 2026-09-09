@@ -49,9 +49,9 @@ When creating or updating a skill:
 
 Good examples in this repo:
 
-- [skills/engineering/jccrosby-documentation-create/SKILL.md](skills/engineering/jccrosby-documentation-create/SKILL.md)
-- [skills/engineering/jccrosby-pr-description/SKILL.md](skills/engineering/jccrosby-pr-description/SKILL.md)
-- [skills/engineering/jccrosby-plan-execute/SKILL.md](skills/engineering/jccrosby-plan-execute/SKILL.md)
+- [skills/engineering/crosby-documentation-create/SKILL.md](skills/engineering/crosby-documentation-create/SKILL.md)
+- [skills/engineering/crosby-pr-description/SKILL.md](skills/engineering/crosby-pr-description/SKILL.md)
+- [skills/engineering/crosby-plan-execute/SKILL.md](skills/engineering/crosby-plan-execute/SKILL.md)
 
 ## Working style for agents
 

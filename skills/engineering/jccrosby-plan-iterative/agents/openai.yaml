@@ -1,3 +1,0 @@
-interface:
-  display_name: 'jccrosby-plan-iterative'
-  short_description: 'Break a complex task into 3-5 simple, testable development steps. Focuses on KISS and avoiding premature abstraction.'

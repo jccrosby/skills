@@ -1,3 +1,0 @@
-interface:
-  display_name: 'jccrosby-readme-update'
-  short_description: 'Performs targeted updates to an existing README.md to reflect new features or architectural changes.'

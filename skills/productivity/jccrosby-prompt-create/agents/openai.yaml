@@ -1,3 +1,0 @@
-interface:
-  display_name: 'jccrosby-prompt-create'
-  short_description: 'Review and refine rough requests into focused, reusable model prompts.'

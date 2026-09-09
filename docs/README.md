@@ -4,20 +4,20 @@ This directory documents the skills in this repository and mirrors the skill lay
 
 ## Available skill docs
 
-- [jccrosby-prompt-create](productivity/jccrosby-prompt-create/README.md)
-- [jccrosby-audit-repo](engineering/jccrosby-audit-repo/README.md)
-- [jccrosby-conventional-commit](engineering/jccrosby-conventional-commit/README.md)
-- [jccrosby-adr-create](engineering/jccrosby-adr-create/README.md)
-- [jccrosby-adr-revise](engineering/jccrosby-adr-revise/README.md)
-- [jccrosby-documentation-create](engineering/jccrosby-documentation-create/README.md)
-- [jccrosby-plan-execute](engineering/jccrosby-plan-execute/README.md)
-- [jccrosby-plan-iterative](engineering/jccrosby-plan-iterative/README.md)
-- [jccrosby-audit-micro](engineering/jccrosby-audit-micro/README.md)
-- [jccrosby-pr-review](engineering/jccrosby-pr-review/README.md)
-- [jccrosby-pr-description](engineering/jccrosby-pr-description/README.md)
-- [jccrosby-readme-generate](engineering/jccrosby-readme-generate/README.md)
-- [jccrosby-readme-update](engineering/jccrosby-readme-update/README.md)
-- [jccrosby-language-simplify](productivity/jccrosby-language-simplify/README.md)
+- [crosby-prompt-create](productivity/crosby-prompt-create/README.md)
+- [crosby-audit-repo](engineering/crosby-audit-repo/README.md)
+- [crosby-conventional-commit](engineering/crosby-conventional-commit/README.md)
+- [crosby-adr-create](engineering/crosby-adr-create/README.md)
+- [crosby-adr-revise](engineering/crosby-adr-revise/README.md)
+- [crosby-documentation-create](engineering/crosby-documentation-create/README.md)
+- [crosby-plan-execute](engineering/crosby-plan-execute/README.md)
+- [crosby-plan-iterative](engineering/crosby-plan-iterative/README.md)
+- [crosby-audit-micro](engineering/crosby-audit-micro/README.md)
+- [crosby-pr-review](engineering/crosby-pr-review/README.md)
+- [crosby-pr-description](engineering/crosby-pr-description/README.md)
+- [crosby-readme-generate](engineering/crosby-readme-generate/README.md)
+- [crosby-readme-update](engineering/crosby-readme-update/README.md)
+- [crosby-language-simplify](productivity/crosby-language-simplify/README.md)
 
 ## How to use this documentation
 

@@ -1,3 +1,0 @@
-interface:
-  display_name: 'jccrosby-plan-execute'
-  short_description: 'Step-by-step implementation of an iterative plan. Enforces atomic commits, state tracking, and mandatory human-in-the-loop checkpoints.'

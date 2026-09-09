@@ -1,3 +1,0 @@
-interface:
-  display_name: 'jccrosby-language-simplify'
-  short_description: 'Simplify a prompt while preserving its intent, requirements, and technical details.'

@@ -1,10 +1,10 @@
 # Writing docs pages
 
-Every skill in any skill category (i.e.`engineering/`, `productivity/`) has a human-facing **docs page** at `docs/{category}/jccrosby-{skill-name}.md`. The docs tree mirrors those two bucket folders under `skills/`.
+Every skill in `engineering/` or `productivity/` has a human-facing **docs page** at `docs/{category}/crosby-{skill-name}/README.md`. The docs tree mirrors those two folders under `skills/`.
 
 Most of these skills are **user-invoked**: the agent will never fire them for you, so _you_ are the index that has to remember they exist and when to reach for them. That memory is **cognitive load**. The job of a docs page is to relieve it: to orient one reader around one skill so they can hold it in their head, know When to use it, and see where it sits in the system. The pages are collectively a distributed router; each is a node.
 
-A rename moves the docs page too (`docs/{category}/jccrosby-{old}.md` → `docs/{category}/jccrosby-{new}.md`), because the published URL tracks the name; a skill that moves between `engineering/` and `productivity/` moves its docs page to the matching folder. Skills in `misc/`, `in-progress/`, and `deprecated/` get no page, because none of those buckets is promoted. A skill moving _out_ of one of them into `engineering/` or `productivity/` gains a page; one moving the other way loses it.
+A rename moves the docs folder too (`docs/{category}/crosby-{old}/` → `docs/{category}/crosby-{new}/`), because the published URL tracks the name. A skill that moves between `engineering/` and `productivity/` moves its docs page to the matching folder. Skills in `misc/`, `in-progress/`, and `deprecated/` get no page, because none of those buckets is promoted. A skill moving _out_ of one of them into `engineering/` or `productivity/` gains a page; one moving the other way loses it.
 
 ## Page structure
 
@@ -57,7 +57,7 @@ Always present. Situate the skill in the system in a sentence or two:
 
 ## Done when
 
-- The page exists at `docs/{category}/jccrosby-{name}.md`, and no stale page survives a rename or category move.
+- The page exists at `docs/{category}/crosby-{name}/README.md`, and no stale page survives a rename or category move.
 - The page carries no source link and writes no install command of its own.
 - `## What it does` states the defining constraint, as plain prose rather than a labelled aside.
 - The page names no author and quotes no author: every claim stands on its own.

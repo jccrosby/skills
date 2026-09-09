@@ -31,17 +31,17 @@ The engineering skills cover common workflows such as:
 
 Examples include:
 
-- `audit-repo`
-- `audit-micro`
-- `plan-iterative`
-- `plan-execute`
-- `documentation-create`
-- `adr-create`
-- `readme-generate`
-- `readme-update`
-- `pr-review`
-- `pr-description`
-- `conventional-commit`
+- `crosby-audit-repo`
+- `crosby-audit-micro`
+- `crosby-plan-iterative`
+- `crosby-plan-execute`
+- `crosby-documentation-create`
+- `crosby-adr-create`
+- `crosby-readme-generate`
+- `crosby-readme-update`
+- `crosby-pr-review`
+- `crosby-pr-description`
+- `crosby-conventional-commit`
 
 ### Documentation and knowledge capture
 
@@ -65,9 +65,9 @@ This repo follows a few core principles:
 
 A typical invocation looks like this:
 
-- "Use the `documentation-create` skill to draft a setup guide for the deployment flow."
-- "Use the `plan-iterative` skill to break this migration into safe milestones."
-- "Use the `conventional-commit` skill for this git diff and generate the commit message."
+- "Use the `crosby-documentation-create` skill to draft a setup guide for the deployment flow."
+- "Use the `crosby-plan-iterative` skill to break this migration into safe milestones."
+- "Use the `crosby-conventional-commit` skill for this git diff and generate the commit message."
 
 ## Contribution approach
 
