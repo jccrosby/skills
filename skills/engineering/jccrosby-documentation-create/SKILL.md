@@ -1,5 +1,5 @@
 ---
-name: documentation-create
+name: jccrosby-documentation-create
 description: Invoke when writing, reviewing, or planning technical documentation. Coaches subject matter experts through contributing their knowledge, and applies professional technical writing standards automatically.
 metadata:
   mcpmarket-version: 1.0.0

@@ -1,10 +1,10 @@
 ---
-name: adr-create
+name: jccrosby-adr-create
 description: 'Draft an Architectural Decision Record (ADR). Use when proposing a technology change, capturing a decision that affects multiple teams/processes, superseding a prior decision, or when the user asks for a ADR / decision record. Produces a markdown draft file only.'
 argument-hint: '<decision topic> [--supersedes <MV title>]'
 ---
 
-# SKILL: adr-create
+# SKILL: jccrosby-adr-create
 
 ## When to Use
 

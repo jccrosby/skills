@@ -1,10 +1,10 @@
 ---
-name: language-simplify
+name: jccrosby-language-simplify
 description: 'Simplify the language of a user-provided prompt while preserving its intent, requirements, technical accuracy, and important details.'
 argument-hint: '<prompt to simplify>'
 ---
 
-# SKILL: language-simplify
+# SKILL: jccrosby-language-simplify
 
 ## When to Use
 

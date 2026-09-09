@@ -1,8 +1,8 @@
 ---
-name: generate-readme
+name: jccrosby-readme-generate
 description: 'Generates a comprehensive project README.md based on the local .ai brain and codebase analysis.'
 ---
-SKILL: generate-readme
+SKILL: jccrosby-readme-generate
 
 PROCEDURE
 

@@ -1,10 +1,10 @@
 ---
-name: pr-review
+name: jccrosby-pr-review
 description: 'Generate a structured PR review outline comparing two branches. Use when reviewing a pull request for KISS compliance, context alignment, evidence of safety, and standard code quality metrics. Does not write PR comments — produces a structured report for the human reviewer.'
 argument-hint: '<source-branch> vs <target-branch>'
 ---
 
-# SKILL: pr-review
+# SKILL: jccrosby-pr-review
 
 ## When to Use
 

@@ -1,10 +1,10 @@
 ---
-name: audit-repo
+name: jccrosby-audit-repo
 description: 'Perform a Principal-level audit of a feature or directory. Use when identifying architectural anti-patterns, memory leaks, or performance bottlenecks in a JS/TS codebase, or verifying compliance with project-context.md.'
 argument-hint: '<feature or directory to audit>'
 ---
 
-# SKILL: audit-repo
+# SKILL: jccrosby-audit-repo
 
 ## When to Use
 

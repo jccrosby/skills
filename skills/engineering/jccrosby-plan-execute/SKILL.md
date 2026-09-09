@@ -1,10 +1,10 @@
 ---
-name: plan-execute
+name: jccrosby-plan-execute
 description: 'Step-by-step implementation of an iterative plan. Enforces atomic commits, state tracking, and mandatory human-in-the-loop checkpoints.'
 argument-hint: '<link to plan or current step description>'
 ---
 
-# SKILL: plan-execute
+# SKILL: jccrosby-plan-execute
 
 ## 🎯 OBJECTIVE
 

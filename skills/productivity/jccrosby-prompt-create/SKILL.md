@@ -1,5 +1,5 @@
 ---
-name: prompt-create
+name: jccrosby-prompt-create
 description: 'Create or improve a model prompt from a rough user request. Use when a prompt needs critique, clarifying questions, persona selection, scope reduction, or a structured final draft.'
 argument-hint: '<rough prompt or task description>'
 ---

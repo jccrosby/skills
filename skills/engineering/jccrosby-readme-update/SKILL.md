@@ -1,9 +1,9 @@
 ---
-name: update-readme
+name: jccrosby-readme-update
 description: 'Performs targeted updates to an existing README.md to reflect new features or architectural changes.'
 ---
 
-SKILL: update-readme
+SKILL: jccrosby-readme-update
 
 PROCEDURE
 
