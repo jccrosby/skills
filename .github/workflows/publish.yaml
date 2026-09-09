@@ -25,7 +25,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Publish to GitHub Packages
-        run: pnpm publish --no-git-checks
+      - name: Configure registry auth
+        run: pnpm config set "//npm.pkg.github.com/:_authToken" "${NODE_AUTH_TOKEN}"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to GitHub Packages
+        run: pnpm publish --no-git-checks
