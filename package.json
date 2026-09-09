@@ -17,17 +17,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.22.0",
-      "onFail": "download"
-    }
-  },
   "type": "module",
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.0",
     "@changesets/cli": "^3.0.0"
   },
-  "packageManager": "pnpm@10.33.2"
+  "packageManager": "pnpm@11.22.0"
 }
