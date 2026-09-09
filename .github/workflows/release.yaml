@@ -28,9 +28,9 @@ jobs:
           persist-credentials: false # recommended: do not persist git credentials on disk
 
       - name: Setup pnpm
-        uses: pnpm/setup@v1
+        uses: pnpm/setup@v2
         with:
-          version: 11
+          version: 11.22.0
           runtime: node@24
           cache: true
 
