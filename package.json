@@ -1,6 +1,5 @@
 {
   "name": "@jccrosby/skills",
-  "private": true,
   "version": "2.0.0",
   "description": "John Crosby's agent skills",
   "repository": {
