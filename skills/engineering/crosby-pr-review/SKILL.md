@@ -23,10 +23,11 @@ argument-hint: '<source-branch> vs <target-branch>'
 ## Review Criteria
 
 1. **Limit Scope** - Only focus on the changes and affected code and tests.
-2. **The KISS Check** — Is this the simplest possible solution? Flag premature abstractions or over-engineering.
-3. **Context Alignment** — Does the change follow the rules in `project-context.md`?
-4. **Evidence Over Explanation** — Flag high-risk areas (Auth, State, Data) that lack tests or safety evidence.
-5. **Standard Metrics** — DRY, SOLID, YAGNI, and performance bottlenecks.
+2. **System Integration** - Call out issues where the changes might break integration with other parts of the system.
+3. **The KISS Check** — Is this the simplest possible solution? Flag premature abstractions or over-engineering.
+4. **Context Alignment** — Does the change follow the rules in `project-context.md`?
+5. **Evidence Over Explanation** — Flag high-risk areas (Auth, State, Data) that lack tests or safety evidence.
+6. **Standard Metrics** — DRY, SOLID, YAGNI, and performance bottlenecks.
 
 ## Output Format
 
@@ -35,7 +36,7 @@ argument-hint: '<source-branch> vs <target-branch>'
 ### 1. High-Level Summary
 
 1. 2–3 sentences on the intent and overall risk of the changes.
-2. For each issue raised provide file paths and line numbers and suggestions to improve or questions to ask
+2. For each issue identified provide a file path and line numbers for the copy-pasteable conventional comments formatted output.
 
 ### 2. Action Required — High Priority
 
