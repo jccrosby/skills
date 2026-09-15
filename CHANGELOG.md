@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 3.0.2
+
+### Patch Changes
+
+- [`b898d55`](https://github.com/jccrosby/skills/commit/b898d551c546bbd6fa20424b811691b4ca62fb81) Thanks [@jccrosby](https://github.com/jccrosby)! - Updates to the pr-review skill
+
 ## 3.0.1
 
 ### Patch Changes
