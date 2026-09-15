@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 3.0.1
+
+### Patch Changes
+
+- [#13](https://github.com/jccrosby/skills/pull/13) [`57c6214`](https://github.com/jccrosby/skills/commit/57c6214735a79945ab822024094d7b4cf3e4c16d) Thanks [@jccrosby](https://github.com/jccrosby)! - adds unslop skill
+
 ## 3.0.0
 
 ### Major Changes

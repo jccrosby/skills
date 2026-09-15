@@ -18,6 +18,7 @@ This directory documents the skills in this repository and mirrors the skill lay
 - [crosby-readme-generate](engineering/crosby-readme-generate/README.md)
 - [crosby-readme-update](engineering/crosby-readme-update/README.md)
 - [crosby-language-simplify](productivity/crosby-language-simplify/README.md)
+- [crosby-unslop](productivity/crosby-unslop/README.md)
 
 ## How to use this documentation
 

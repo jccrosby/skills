@@ -43,6 +43,7 @@ The productivity folder now includes the following skills:
 
 - `crosby-prompt-create` — Reviews and refines rough requests into focused, reusable model prompts, including clarification, persona, and scope guidance.
 - `crosby-language-simplify` — Simplify a user-provided prompt while preserving its intent, requirements, and technical details.
+- `crosby-unslop` — Removes recognizable AI writing patterns while preserving the meaning and intended tone of existing text.
 
 When a skill is added, it should be summarized here with:
 
