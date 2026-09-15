@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 3.0.3
+
+### Patch Changes
+
+- [`f4d9d32`](https://github.com/jccrosby/skills/commit/f4d9d32571778206e888b63218bc6fcc8058e746) Thanks [@jccrosby](https://github.com/jccrosby)! - Updated output format for generated pr-review comments
+
 ## 3.0.2
 
 ### Patch Changes
