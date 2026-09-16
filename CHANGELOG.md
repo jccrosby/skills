@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 3.0.4
+
+### Patch Changes
+
+- [`01d2951`](https://github.com/jccrosby/skills/commit/01d295132c75edd6bb49da73dddb22372257ac94) Thanks [@jcrosby-mlb](https://github.com/jcrosby-mlb)! - Adds proven-better-new skill
+
 ## 3.0.3
 
 ### Patch Changes
