@@ -47,6 +47,12 @@ Examples include:
 
 This repo treats documentation as a product in its own right. Skills help turn domain knowledge into useful guidance for humans and AI co-workers by emphasizing clear structure, user intent, maintainability, and findability.
 
+### Idea evaluation
+
+Use [crosby-proven-better-new](skills/productivity/crosby-proven-better-new/SKILL.md) to evaluate ideas for apps, tools, and projects before building.
+It researches alternatives, separates evidence from assumptions, and suggests small tests for important unknowns.
+The [usage guide](docs/productivity/crosby-proven-better-new/README.md) includes examples for personal tools, internal projects, and commercial apps.
+
 ## Repository conventions
 
 This repo follows a few core principles:

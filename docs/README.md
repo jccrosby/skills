@@ -5,6 +5,7 @@ This directory documents the skills in this repository and mirrors the skill lay
 ## Available skill docs
 
 - [crosby-prompt-create](productivity/crosby-prompt-create/README.md)
+- [crosby-proven-better-new](productivity/crosby-proven-better-new/README.md)
 - [crosby-audit-repo](engineering/crosby-audit-repo/README.md)
 - [crosby-conventional-commit](engineering/crosby-conventional-commit/README.md)
 - [crosby-adr-create](engineering/crosby-adr-create/README.md)

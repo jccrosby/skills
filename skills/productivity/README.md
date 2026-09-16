@@ -2,7 +2,7 @@
 
 This category is reserved for productivity-oriented workflows: planning, execution support, personal operations, communication, and lightweight coordination tasks that help a person or agent work more effectively.
 
-At the moment, this folder is intentionally minimal. It exists as a home for future productivity skills and as a standard pattern for how those skills should be introduced, invoked, and used.
+This folder includes skills for prompt writing, editing, and idea evaluation.
 
 ## How to use this category
 
@@ -41,9 +41,13 @@ The most effective pattern is:
 
 The productivity folder now includes the following skills:
 
+- [crosby-proven-better-new](crosby-proven-better-new/SKILL.md) evaluates app, tool, and project ideas before implementation. It returns researched findings and proposed tests.
 - `crosby-prompt-create` — Reviews and refines rough requests into focused, reusable model prompts, including clarification, persona, and scope guidance.
 - `crosby-language-simplify` — Simplify a user-provided prompt while preserving its intent, requirements, and technical details.
 - `crosby-unslop` — Removes recognizable AI writing patterns while preserving the meaning and intended tone of existing text.
+
+For idea evaluation, use: "Use crosby-proven-better-new to evaluate this tool idea against my current workaround."
+See the [usage guide](../../docs/productivity/crosby-proven-better-new/README.md) for examples and expected output.
 
 When a skill is added, it should be summarized here with:
 
