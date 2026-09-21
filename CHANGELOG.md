@@ -1,5 +1,15 @@
 # jccrosby-skills
 
+## 3.1.0
+
+### Minor Changes
+
+- [`e70e9fc`](https://github.com/jccrosby/skills/commit/e70e9fc15ae38e45979280f9d165f567d0b1ddde) Thanks [@jccrosby](https://github.com/jccrosby)! - Add issue refinement, root-cause debugging, test design, CI triage, release readiness, dependency upgrade, postmortem, and skill review workflows. Generalize the ADR, repository audit, pull request description, and README generation skills for reuse across projects.
+
+### Patch Changes
+
+- [`f323cb0`](https://github.com/jccrosby/skills/commit/f323cb0149ac55d8c3aa2680b666d137c24b4db1) Thanks [@jcrosby-mlb](https://github.com/jcrosby-mlb)! - Update pr-review to not be all lower case.
+
 ## 3.0.4
 
 ### Patch Changes
