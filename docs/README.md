@@ -10,6 +10,7 @@ This directory documents the skills in this repository and mirrors the skill lay
 - [crosby-conventional-commit](engineering/crosby-conventional-commit/README.md)
 - [crosby-adr-create](engineering/crosby-adr-create/README.md)
 - [crosby-adr-revise](engineering/crosby-adr-revise/README.md)
+- [crosby-adr-review](engineering/crosby-adr-review/README.md)
 - [crosby-documentation-create](engineering/crosby-documentation-create/README.md)
 - [crosby-plan-execute](engineering/crosby-plan-execute/README.md)
 - [crosby-plan-iterative](engineering/crosby-plan-iterative/README.md)

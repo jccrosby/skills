@@ -56,6 +56,10 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
   - Typical invocation: "Use the `crosby-adr-revise` skill to address the comments on docs/adrs/20260820-foo.md and update the ADR only after I review the plan."
   - Expected output: A concrete revision plan, user approval checkpoint, and the final ADR update with any remaining follow-up notes.
 
+- `crosby-adr-review` — Reviews an existing ADR for comprehensiveness, completeness, clarity, simple language, and correct organization of supporting assets. Read-only — produces a structured report only.
+  - Typical invocation: "Use the `crosby-adr-review` skill on docs/adrs/20260820-foo.md before I circulate it for approval."
+  - Expected output: A tiered findings report (Critical / Recommended / Minor) with a recommended next action, usually a hand-off to `crosby-adr-revise`.
+
 - `crosby-readme-generate` — Produces a project README from repository context, project goals, and codebase structure.
   - Typical invocation: "Use the `crosby-readme-generate` skill to draft a README for this service."
   - Expected output: A new project README with overview, architecture, setup instructions, and agent workflow guidance.
@@ -87,6 +91,7 @@ When choosing a skill, start with the task, not the folder:
 - If the work is large and ambiguous: use `crosby-plan-iterative`.
 - If the work is implementation-focused: use `crosby-plan-execute`.
 - If the work is documentation or decision records: use `crosby-documentation-create` or `crosby-adr-create`.
+- If the work is reviewing a decision record: use `crosby-adr-review`.
 - If the work is review or delivery: use `crosby-pr-review`, `crosby-pr-description`, or `crosby-conventional-commit`.
 
 This folder is intended to be a practical index, not a replacement for the individual skill instructions. For the exact trigger conditions, output format, and constraints, read the matching `SKILL.md` in each subfolder.

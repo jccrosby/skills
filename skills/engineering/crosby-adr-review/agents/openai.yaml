@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-adr-review'
+  short_description: 'Review an existing Architectural Decision Record (ADR).'
