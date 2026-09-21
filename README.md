@@ -35,6 +35,14 @@ Examples include:
 - `crosby-audit-micro`
 - `crosby-plan-iterative`
 - `crosby-plan-execute`
+- `crosby-issue-refine`
+- `crosby-debug-root-cause`
+- `crosby-test-design`
+- `crosby-ci-triage`
+- `crosby-release-readiness`
+- `crosby-dependency-upgrade`
+- `crosby-postmortem-create`
+- `crosby-skill-review`
 - `crosby-documentation-create`
 - `crosby-adr-create`
 - `crosby-readme-generate`

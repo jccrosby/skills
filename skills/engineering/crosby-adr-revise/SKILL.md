@@ -1,7 +1,6 @@
 ---
 name: crosby-adr-revise
 description: 'Revise an existing ADR from review feedback by creating a change plan, letting the user review and edit it, and then applying the approved updates to the ADR.'
-argument-hint: '<adr path> [--feedback "<review notes>"]'
 ---
 
 # SKILL: crosby-adr-revise

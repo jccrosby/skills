@@ -17,8 +17,8 @@ Use it when:
 1. Inspect the current branch and working state.
 2. Compare against the default base branch.
 3. Read the git log and diff for scope and likely user-visible changes.
-4. Fill in the repo template with accurate overview, change type, related tickets, and checklist items.
-5. Return a markdown body ready to paste into GitHub or pass to the CLI.
+4. Use the repository's pull request template when one exists; otherwise use a small summary, changes, and verification structure.
+5. Return a title and markdown body ready to paste into GitHub or pass to the CLI.
 
 ## What makes a good PR description
 
@@ -34,7 +34,7 @@ A strong PR description should:
 
 - Do not invent behavior or test results.
 - Keep the overview focused on motivation and impact.
-- Preserve the exact template headings and structure.
+- Preserve the repository template's headings and structure when one exists.
 - Call out if the diff mixes unrelated concerns.
 
 ## Common pitfalls

@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-dependency-upgrade'
+  short_description: 'Plan dependency upgrades from authoritative evidence'

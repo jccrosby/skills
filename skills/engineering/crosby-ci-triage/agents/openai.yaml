@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-ci-triage'
+  short_description: 'Find and classify the first actionable CI failure'

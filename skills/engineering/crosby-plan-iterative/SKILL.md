@@ -1,7 +1,6 @@
 ---
 name: crosby-plan-iterative
 description: 'Break a complex task into 3-5 simple, testable development steps. Focuses on KISS and avoiding premature abstraction.'
-argument-hint: '<task description>'
 ---
 
 # SKILL: crosby-plan-iterative

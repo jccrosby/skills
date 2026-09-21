@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-skill-review'
+  short_description: 'Review AI skills for scope, safety, and usability'

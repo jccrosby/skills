@@ -8,7 +8,7 @@ Use this skill to review an existing architectural decision record for comprehen
 
 Use it when:
 
-- a PROPOSED ADR is about to be circulated for approval,
+- a proposed ADR is about to be circulated for approval,
 - an ADR is being considered for acceptance,
 - an existing ADR may be stale, incomplete, or unclear,
 - or you want a structured critique before handing feedback to the author.
@@ -26,8 +26,8 @@ Do not use it for:
 
 1. Confirm the ADR path, review focus, audience, and any related ADRs.
 2. Read the ADR in full and open every referenced ADR, ticket, image, and link.
-3. Check the file location and filename against the project convention.
-4. Compare the ADR against the template owned by `crosby-adr-create`.
+3. Check the location, filename, status, and structure against the repository's established ADR convention.
+4. Use the portable fallback from `crosby-adr-create` only when no local convention exists.
 5. Apply the four review criteria: structural completeness, comprehensiveness, clarity, and supporting assets.
 6. Group findings by severity and return the report.
 7. Recommend the next action, usually a hand-off to `crosby-adr-revise`.
@@ -36,7 +36,7 @@ Do not use it for:
 
 Check for:
 
-- structural completeness against the required ADR template,
+- structural completeness against the repository's ADR convention,
 - comprehensiveness of context, rationale, options considered, consequences, and next steps,
 - clarity and simple language, including active voice and consistent terminology,
 - and correct organization of supporting assets such as filenames, image paths, and references.

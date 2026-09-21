@@ -1,7 +1,6 @@
 ---
 name: crosby-audit-micro
 description: 'High-density logic audit on a single file. Use when checking for KISS violations, logic gaps, DRY/YAGNI issues, or unintended side effects. Standards sourced from global-identity.md.'
-argument-hint: '<file to audit>'
 ---
 
 # SKILL: crosby-audit-micro

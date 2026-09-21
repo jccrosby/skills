@@ -34,6 +34,10 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
 
 ### Planning and execution
 
+- `crosby-issue-refine` — Turns an ambiguous request or ticket into a build-ready brief with scope, acceptance criteria, unknowns, and verification.
+  - Typical invocation: "Use `crosby-issue-refine` to make this bug report ready for implementation planning."
+  - Expected output: A scoped issue brief and a readiness decision.
+
 - `crosby-plan-iterative` — Breaks a large task into a short execution roadmap of 3-5 sequential, testable steps. Use before implementation starts.
   - Typical invocation: "Use the `crosby-plan-iterative` skill to break this API migration into a safe step-by-step roadmap."
   - Expected output: A short implementation plan with success criteria for each step.
@@ -41,6 +45,20 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
 - `crosby-plan-execute` — Carries out the current step of an implementation plan while keeping scope tight and requiring human approval before moving on.
   - Typical invocation: "Use the `crosby-plan-execute` skill for step 2 of the migration plan and keep the change scoped."
   - Expected output: A small implementation change, verification notes, and a request for review before the next step.
+
+### Diagnosis and verification
+
+- `crosby-debug-root-cause` — Investigates incorrect or intermittent behavior and distinguishes a confirmed root cause from symptoms and hypotheses.
+  - Typical invocation: "Use `crosby-debug-root-cause` to explain why this request intermittently times out."
+  - Expected output: Reproduction evidence, causal chain, affected scope, and fix direction.
+
+- `crosby-test-design` — Designs a risk-based test plan for a feature, defect, refactor, or migration.
+  - Typical invocation: "Use `crosby-test-design` to define regression coverage for this change."
+  - Expected output: Prioritized automated and manual checks mapped to behaviors and risks.
+
+- `crosby-ci-triage` — Finds the first actionable CI failure and classifies the responsible layer.
+  - Typical invocation: "Use `crosby-ci-triage` on this failed workflow run."
+  - Expected output: Failure classification, evidence, affected scope, and next action.
 
 ### Documentation and decision-making
 
@@ -82,6 +100,22 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
   - Typical invocation: "Use the `crosby-conventional-commit` skill for this staged diff and generate the commit message."
   - Expected output: A copy-ready conventional commit message in a single code block.
 
+- `crosby-release-readiness` — Assesses whether a change has enough compatibility, rollout, rollback, and verification evidence to ship.
+  - Typical invocation: "Use `crosby-release-readiness` on version 2.4 before deployment."
+  - Expected output: A ready, ready-with-conditions, or not-ready decision with blockers and release checks.
+
+- `crosby-dependency-upgrade` — Researches compatibility and creates an evidence-backed upgrade plan for a dependency or runtime.
+  - Typical invocation: "Use `crosby-dependency-upgrade` to plan the upgrade from framework v4 to v5."
+  - Expected output: Compatibility findings, ordered migration steps, verification, and rollback limits.
+
+- `crosby-postmortem-create` — Creates a factual, blameless incident postmortem from operational evidence.
+  - Typical invocation: "Use `crosby-postmortem-create` with these incident notes and logs."
+  - Expected output: Impact, timeline, causal analysis, and owned corrective actions.
+
+- `crosby-skill-review` — Reviews a skill's discovery metadata, scope, instructions, portability, safety boundaries, and repository consistency.
+  - Typical invocation: "Use `crosby-skill-review` before publishing this new skill."
+  - Expected output: Prioritized findings and a publish-readiness decision.
+
 ## Recommended usage pattern
 
 When choosing a skill, start with the task, not the folder:
@@ -89,9 +123,13 @@ When choosing a skill, start with the task, not the folder:
 - If the work is architectural or broad: use `crosby-audit-repo`.
 - If the work is a one-file review: use `crosby-audit-micro`.
 - If the work is large and ambiguous: use `crosby-plan-iterative`.
+- If the requirement itself is ambiguous: use `crosby-issue-refine`.
 - If the work is implementation-focused: use `crosby-plan-execute`.
+- If a failure's cause is unknown: use `crosby-debug-root-cause` or `crosby-ci-triage` for a pipeline failure.
+- If verification coverage is unclear: use `crosby-test-design`.
 - If the work is documentation or decision records: use `crosby-documentation-create` or `crosby-adr-create`.
 - If the work is reviewing a decision record: use `crosby-adr-review`.
 - If the work is review or delivery: use `crosby-pr-review`, `crosby-pr-description`, or `crosby-conventional-commit`.
+- If the work is about shipping or operational learning: use `crosby-release-readiness` or `crosby-postmortem-create`.
 
 This folder is intended to be a practical index, not a replacement for the individual skill instructions. For the exact trigger conditions, output format, and constraints, read the matching `SKILL.md` in each subfolder.

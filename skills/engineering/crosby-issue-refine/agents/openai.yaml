@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-issue-refine'
+  short_description: 'Turn rough requests into build-ready issue briefs'

@@ -10,11 +10,11 @@ Choose it when a repo needs a first-pass README or a stronger overview of the pr
 
 ## Inputs
 
-This skill relies on the repo’s project context and technical standards, including the local AI brain and project metadata.
+This skill relies on repository evidence such as contributor instructions, manifests, configuration, entry points, tests, and existing documentation.
 
 ## Workflow
 
-1. Read the project context and standards.
+1. Read the repository instructions, project context, and standards that actually exist.
 2. Inspect the repository structure and entry points.
 3. Summarize the project purpose and architecture.
 4. Draft a README with the necessary sections.
@@ -27,13 +27,14 @@ This skill relies on the repo’s project context and technical standards, inclu
 - architecture
 - tech stack
 - getting started
-- AI or agent collaboration guidance
+- agent collaboration guidance when the repository uses it
 
 ## Good practice
 
 - Keep setup steps practical and concise.
 - Focus on the repo’s value and how to work with it.
 - Include agent usage guidance only where it adds clarity.
+- Treat optional context directories such as `.ai/` as local conventions, not universal requirements.
 
 ## Common pitfalls
 

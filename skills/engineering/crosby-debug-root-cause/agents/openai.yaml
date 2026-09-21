@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-debug-root-cause'
+  short_description: 'Diagnose software failures using causal evidence'

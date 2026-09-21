@@ -26,9 +26,9 @@ Do not use it for:
 
 1. Confirm the decision topic and status.
 2. Gather contributors, references, and any superseded ADRs.
-3. Draft the ADR in the project’s required structure.
+3. Follow the project's existing ADR structure, or use the skill's portable fallback when none exists.
 4. Include context, decision, rationale, considered options, consequences, and next steps.
-5. Save the draft in a docs/adrs folder and stop after drafting.
+5. Save the draft in the repository's ADR location, or `docs/adrs/` when the repository has no convention, and stop after drafting.
 
 ## Required ADR sections
 

@@ -2,12 +2,12 @@
 
 ## Purpose
 
-Use this skill when you need a high-level review of a feature, directory, or code area in a JavaScript or TypeScript project.
+Use this skill when you need a high-level review of a feature, directory, service, or package across multiple files.
 
 It is designed to surface:
 
 - architectural anti-patterns,
-- performance or memory concerns,
+- correctness, performance, or resource-lifecycle concerns,
 - logic gaps,
 - and compliance issues with the repo’s project context guidance.
 
@@ -24,17 +24,17 @@ Choose this skill when:
 
 1. Identify the feature or directory to audit.
 2. Review the relevant code and surrounding context.
-3. Look for architectural misuse, performance bottlenecks, and memory-risk patterns.
-4. Check whether the implementation aligns with the project context and repo rules.
-5. Present findings as a concise markdown table with severity and recommended fixes.
+3. Trace important data, control, error, and resource-lifecycle paths.
+4. Check whether the implementation aligns with the actual language, framework, project context, and repository rules.
+5. Present evidence-backed findings with severity and the smallest useful correction.
 
 ## Output format
 
 Use a table like this:
 
-| File / Location | Issue | Severity | Proposed Fix |
-| --- | --- | --- | --- |
-| path/to/file | Example: unnecessary coupling or hot path | Critical / Major / Moderate / Minor | Example: simplify the flow or isolate side effects |
+| File / location | Issue | Evidence | Severity | Smallest useful correction |
+| --- | --- | --- | --- | --- |
+| path/to/file | Example: unnecessary coupling or hot path | Relevant code path or behavior | Critical / Major / Moderate / Minor | Example: simplify the flow or isolate side effects |
 
 ## Good practice
 

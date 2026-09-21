@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-postmortem-create'
+  short_description: 'Create factual, blameless incident postmortems'

@@ -1,7 +1,6 @@
 ---
 name: crosby-conventional-commit
 description: Generate a Conventional Commit message based on a git diff. Ensures messages are atomic, descriptive, and follow project-specific standards.
-argument-hint: '<git diff output or staged files>'
 ---
 
 # SKILL: crosby-conventional-commit

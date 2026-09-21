@@ -1,7 +1,6 @@
 ---
 name: crosby-plan-execute
 description: 'Step-by-step implementation of an iterative plan. Enforces atomic commits, state tracking, and mandatory human-in-the-loop checkpoints.'
-argument-hint: '<link to plan or current step description>'
 ---
 
 # SKILL: crosby-plan-execute
@@ -20,7 +19,7 @@ Execute the current step of an implementation plan while maintaining high-densit
 ### Phase 2: Atomic Implementation
 
 1. **Small Batching:** Implement the minimum logic required for the current step.
-2. **Prioritize TDD:** Create tests that prove the desired behavior before writing the implementation code.
+2. **Prioritize TDD:** Create tests that prove the desired behavior before writing the implementation code. Use `crosby-test-design` first when the required evidence or test level is unclear.
 3. **KISS Audit:** Before showing code, perform a mental `crosby-audit-micro`. Is this over-engineered?
 4. **Drafting:** Apply the changes to the codebase.
 

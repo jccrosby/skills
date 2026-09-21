@@ -1,0 +1,3 @@
+interface:
+  display_name: 'crosby-release-readiness'
+  short_description: 'Assess evidence and risk before shipping a release'

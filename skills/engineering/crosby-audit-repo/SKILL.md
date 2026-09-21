@@ -1,29 +1,31 @@
 ---
 name: crosby-audit-repo
-description: 'Perform a Principal-level audit of a feature or directory. Use when identifying architectural anti-patterns, memory leaks, or performance bottlenecks in a JS/TS codebase, or verifying compliance with project-context.md.'
-argument-hint: '<feature or directory to audit>'
+description: Audit a feature or directory for correctness, architecture, maintainability, performance, and compliance with repository conventions. Use for a broad code review that spans multiple files; use a focused review for a single file.
 ---
 
-# SKILL: crosby-audit-repo
+# Audit a repository area
 
 ## When to Use
 
-- Auditing a specific feature or directory in a JS/TS codebase
-- Identifying architectural anti-patterns or performance issues
-- Verifying compliance with `project-context.md` rules
+- Auditing a feature, package, service, or directory across multiple files.
+- Identifying architectural, correctness, maintainability, or performance risks.
+- Verifying compliance with repository-specific instructions and established patterns.
 
 ## Procedure
 
-Using the full context of this repository, perform a Principal-level audit of **[Feature/Directory]**:
-
-1. Identify architectural anti-patterns.
-2. Flag potential memory leaks or performance bottlenecks in the JS/TS code.
-3. Verify compliance with the Project Context (`project-context.md`).
+1. Read the repository instructions and relevant architecture or project-context documents when they exist.
+2. Establish the target area's purpose, public boundaries, callers, dependencies, tests, and operational constraints.
+3. Trace important data, control, error, and resource-lifecycle paths across the files in scope.
+4. Identify issues supported by concrete code evidence. Consider correctness, integration, architecture, security boundaries, performance, resource cleanup, maintainability, and test gaps when relevant.
+5. Check repository conventions using the actual language and framework in the target, not assumptions from another stack.
+6. Avoid reporting style preferences as defects unless the repository defines them as requirements.
 
 ## Output Format
 
 Markdown table of findings:
 
-| File / Location | Issue | Severity                            | Proposed Fix |
-| --------------- | ----- | ----------------------------------- | ------------ |
-| `path/to/file`  | ...   | Critical / Major / Moderate / Minor | ...          |
+| File / location | Issue | Evidence | Severity | Smallest useful correction |
+| --- | --- | --- | --- | --- |
+| `path/to/file` | ... | ... | Critical / Major / Moderate / Minor | ... |
+
+Order findings by severity. Include file and line references when available. If no actionable finding is supported, say so and identify any verification limits. Do not modify code during an audit-only request.

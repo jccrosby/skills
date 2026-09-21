@@ -17,7 +17,7 @@ Use it when:
 1. Locate the plan and confirm the current step.
 2. Ensure previous steps are marked complete.
 3. Implement only the minimum logic for the current step.
-4. Prefer tests and a small change set.
+4. Prefer tests and a small change set. Use `crosby-test-design` first when the required evidence or test level is unclear.
 5. Summarize the work and ask for review.
 6. Only continue after approval.
 
