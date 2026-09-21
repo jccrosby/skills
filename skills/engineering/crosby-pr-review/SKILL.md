@@ -36,7 +36,7 @@ argument-hint: '<source-branch> vs <target-branch>'
 ### 1. High-Level Summary
 
 1. 2–3 sentences on the intent and overall risk of the changes.
-2. For each issue identified provide a file path and line numbers for the copy-pasteable, all lower case, conventional comments formatted output.
+2. For each issue identified provide a file path and line numbers for the copy-pasteable, conventional comments formatted output. Make sure the sentence immediatley after the label/decoration starts with a lowercase letter.
 
 ### 2. Action Required — High Priority
 
