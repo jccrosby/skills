@@ -1,28 +1,15 @@
 ---
 name: crosby-readme-update
-description: 'Performs targeted updates to an existing README.md to reflect new features or architectural changes.'
+description: Update an existing README.md for a requested change using repository evidence. Use when setup, usage, features, or architecture documentation has become stale.
 ---
 
-SKILL: crosby-readme-update
+# Update an existing README
 
-PROCEDURE
+## Procedure
 
-Identify Changes: Read the most recent commit messages and ./.ai/project-context.md to see what has changed since the last update.
+1. Read the request and the current README. Inspect the relevant code, configuration, or documentation that establishes the change. Use commits or project context files when they add evidence.
+2. Find the affected sections. Check examples and commands against the repository before changing them.
+3. Update only the sections affected by the change. Preserve the README's tone and structure.
+4. Review the diff for unsupported claims, broken links, and unrelated edits. Report what changed and any facts that remain unverified.
 
-Locate Sections: Find relevant sections in the current README.md (e.g., Features, Roadmap, Tech Stack).
-
-Draft Updates:
-
-Add new features to the list.
-
-Update the tech stack if new dependencies were added.
-
-Adjust "Getting Started" if environment variables or setup steps changed.
-
-Human Review: Present the diff to the user before applying changes.
-
-CONSTRAINT
-
-Maintain the existing tone and formatting of the original README.
-
-Only update what is strictly necessary (KISS).
+When the user requests an update, apply it and present the resulting diff or summary. For a review-only request, return proposed changes without editing the file.

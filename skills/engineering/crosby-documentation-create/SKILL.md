@@ -23,22 +23,21 @@ If someone says "we need docs for this project" or "document this for a new team
 
 ### Draft a Single Doc
 
-1. **Survey what exists.** Before writing anything, look at the existing documentation in the repo. If the repo has an `llms.txt`, start there — it's a map of what exists. Otherwise, scan doc directories and read frontmatter. Understand what's already documented, how it's organized, and where the new content fits. This isn't optional — every new doc should land in context, not in isolation.
-1. **Figure out what they know.** Ask about their topic, their audience, and what someone should be able to do after reading the doc. Follow up with questions that pull out prerequisites, gotchas, and decision points.
+1. **Survey what exists.** Read the relevant repository guidance and neighboring docs. Use an `llms.txt` map when one exists. Identify the right location and established format.
+1. **Gather missing knowledge.** Use the request and available sources to identify the topic, audience, and reader goal. Ask only about gaps that would change the document.
 1. **Pick the right structure.** Based on what they tell you, choose the content type that best serves the reader. You don't need to explain your choice unless they ask.
-1. **Write the draft.** Apply formatting standards, tone, and structure automatically. Produce something they can react to. Connect it to existing docs — add cross-references, update related pages, and flag where this content overlaps with or extends what's already there.
-1. **Ask them to check the substance.** Is it technically accurate? Is anything missing? Would it make sense to the intended reader?
-1. **Refine and deliver.** Incorporate feedback, finalize the doc, put it in the right place. Generate frontmatter per `frontmatter-spec.md`. If the repo has an `llms.txt`, add an entry for the new doc. If other docs need updating to reference this new content, do that too or flag it explicitly.
+1. **Write and check the draft.** Match local style and verify factual claims. Add cross-references or update navigation when needed to make the new page findable.
+1. **Deliver.** When the user requested a file change, write the document and report any unresolved facts. Use frontmatter only when the target repository uses it; then consult `frontmatter-spec.md` if no local schema exists. Update `llms.txt` only when it serves as the repository's maintained doc index.
 
 ### Plan a Documentation Set
 
 1. **Understand the project.** Read the codebase, existing docs, README, issues. Get enough context to ask good questions.
-1. **Ask about scope and direction.** Who are the users? What are they trying to accomplish? How deep should we go? What's the priority? Don't skip these — the answers shape everything.
+1. **Resolve scope and direction.** Identify users, tasks, depth, and priority from available context. Ask about missing choices that would change the plan.
 1. **Map user journeys.** Identify the core paths: getting started, key tasks, failure modes, beginner to proficient.
 1. **Propose a plan.** Prioritized list of docs to write, organized by user journey, with content types, audiences, and dependencies.
-1. **Get buy-in, then execute.** Don't write until the plan is agreed on. Then work through it doc by doc, each one following the drafting workflow above.
+1. **Deliver the requested outcome.** Return the plan when the user asked for a plan. Write the docs when the user also requested them, using the drafting workflow above.
 
-See the `/plan` command for the full planning methodology.
+For large documentation sets, consult `ia-design-methodology.md` for planning guidance.
 
 ### In Both Modes
 
@@ -72,7 +71,7 @@ See `documentation-patterns.md` for detailed patterns, antipatterns, and example
 
 ## Writing Standards
 
-These are your responsibility, not the contributor's.
+These are your responsibility, not the contributor's. Follow the target repository's conventions first; use these defaults when none exist.
 
 ### Tone and Voice
 
@@ -91,15 +90,14 @@ See `tone-and-voice.md` for detailed formatting and voice guidelines.
 - Use `#`, `##`, `###` — avoid going deeper than `####`
 - One H1 per file
 - No emojis in headings
-- **AP title case** (capitalize major words, lowercase articles/conjunctions/short prepositions)
+- Follow the repository's heading case. When none exists, use sentence case.
 - **Action-oriented** — use imperative verbs, not gerunds
-  - Good: "Install the Plugin", "Configure Authentication"
-  - Bad: "Installing the Plugin", "Configuring Authentication"
+  - Good: "Install the plugin", "Configure authentication"
+  - Bad: "Installing the plugin", "Configuring authentication"
 - **SEO-friendly** — use keywords users search for
 
 > [!NOTE]
-> AP title case is a style choice.
-> Some teams prefer sentence case.
+> Heading case is a local style choice.
 
 **Lists**
 
@@ -127,11 +125,10 @@ See `tone-and-voice.md` for detailed formatting and voice guidelines.
 
 - No TODOs or placeholders in published docs
 - Check anchor links when renaming headings or moving files
-- Break lines after each period for easier editing and diffs
+- Follow the repository's line wrapping style.
 
 > [!NOTE]
-> Line breaks after periods is a style choice.
-> It improves diff readability but some teams prefer reflowed paragraphs.
+> Line wrapping is a local style choice.
 
 ## Documentation Antipatterns
 

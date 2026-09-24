@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use this skill when an existing ADR needs to be adjusted in response to review comments, stakeholder feedback, or newly discovered context. The goal is to turn feedback into a focused, reviewable change plan and then apply only the approved updates to the ADR.
+Use this skill to revise an existing ADR from review comments, stakeholder feedback, or new context. Keep the decision and local format intact.
 
 ## When to use it
 
@@ -27,8 +27,8 @@ Do not use it for:
 1. Read the existing ADR and gather the review feedback.
 2. Identify the relevant sections and classify the issues.
 3. Draft a concrete revision plan tied to the feedback and ADR sections.
-4. Present the plan for user review and editing.
-5. Apply only the approved changes to the ADR.
+4. Ask for direction if the feedback changes the decision or leaves scope unclear.
+5. Apply the requested revision. Return a plan without editing when the user asked only for a plan.
 6. Verify the ADR remains coherent, evidence-based, and consistent with the decision.
 7. Summarize what changed and any remaining follow-up items.
 
@@ -38,7 +38,7 @@ A strong ADR revision workflow includes:
 
 - a summary of the concerns raised,
 - a reviewable plan that maps feedback to sections,
-- a human approval checkpoint before editing,
+- a question only when a material decision remains unresolved,
 - a final ADR update with a brief summary of changes.
 
 ## Good practice
@@ -50,7 +50,7 @@ A strong ADR revision workflow includes:
 
 ## Common pitfalls
 
-- Editing the ADR before the user has reviewed the plan.
+- Changing the ADR's decision without approval.
 - Broadening the scope beyond reviewer feedback.
 - Changing the decision outcome without approval.
 - Inventing references, dates, or tickets that were not provided.

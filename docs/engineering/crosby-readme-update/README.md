@@ -15,11 +15,11 @@ Use it when:
 
 ## Workflow
 
-1. Review recent changes and project context.
+1. Read the request, README, and relevant repository evidence. Check recent changes when useful.
 2. Locate the relevant README sections.
 3. Update only the precise sections affected by the change.
 4. Keep the original voice and formatting intact.
-5. Present the diff for user review before finalizing.
+5. Apply the requested update and report the diff or summary. For review-only requests, propose changes without editing.
 
 ## Good practice
 

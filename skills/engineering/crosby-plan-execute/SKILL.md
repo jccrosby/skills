@@ -1,42 +1,23 @@
 ---
 name: crosby-plan-execute
-description: 'Step-by-step implementation of an iterative plan. Enforces atomic commits, state tracking, and mandatory human-in-the-loop checkpoints.'
+description: Implement the next part of an existing plan with focused changes and verification. Use when the user asks to execute a plan or a named step.
 ---
 
-# SKILL: crosby-plan-execute
+# Execute an implementation plan
 
-## 🎯 OBJECTIVE
+Use the plan as the source of scope. Complete the work the user authorized, including later steps when requested.
 
-Execute the current step of an implementation plan while maintaining high-density communication and system integrity. Focus on the smallest possible unit of work that provides value or testability.
+## Procedure
 
-## 🛠 PROCEDURE
+1. Locate the plan and identify the requested step or remaining work. Check earlier results and relevant repository instructions.
+2. Implement the smallest coherent change for each step. Add tests when they provide useful evidence for behavior or risk.
+3. Run focused verification, inspect the diff, and fix failures caused by the change.
+4. Update plan status when the plan tracks it. Keep status consistent with work actually completed.
+5. Report the changes, verification, and remaining risks. Continue through the authorized scope unless a material decision needs user input.
 
-### Phase 1: Context Alignment
+## Boundaries
 
-1. **Locate the Plan:** Identify the source of truth for the implementation (e.g., `PLAN.md` or a specific section in `project-context.md`).
-2. **State Check:** Mark the current step as "IN PROGRESS." Ensure all previous steps are "COMPLETED."
-
-### Phase 2: Atomic Implementation
-
-1. **Small Batching:** Implement the minimum logic required for the current step.
-2. **Prioritize TDD:** Create tests that prove the desired behavior before writing the implementation code. Use `crosby-test-design` first when the required evidence or test level is unclear.
-3. **KISS Audit:** Before showing code, perform a mental `crosby-audit-micro`. Is this over-engineered?
-4. **Drafting:** Apply the changes to the codebase.
-
-### Phase 3: The Human Loop (MANDATORY)
-
-1. **Summarize:** Explain exactly what was changed and _why_ it satisfies the current step.
-2. **Verification:** Run relevant tests or linters if available.
-3. **STOP:** Do not proceed to the next step. Prompt the user: "⚠️ Step [X] implemented. Please review the changes. Ready to commit?"
-
-### Phase 4: Persistence
-
-1. **Commit:** Upon approval, invoke the `crosby-conventional-commit` skill logic to generate a message for the diff.
-2. **Update State:** Move the step to "COMPLETED" in the plan.
-3. **Sync:** If any architectural rules or context were modified, run `aisync`.
-
-## 🚫 CRITICAL CONSTRAINTS
-
-- **No Scope Creep:** Do not fix "nearby" bugs or refactor unrelated code unless explicitly part of the step.
-- **Max Diff Size:** If a single step produces >200 lines of change, pause and suggest breaking the step into sub-tasks.
-- **Atomic Commits:** One step = One commit. No exceptions.
+- Keep unrelated bugs and refactors outside the plan unless they block its completion.
+- Pause for a decision only when the plan leaves a material choice unresolved or the user asked for a checkpoint.
+- Commit only when requested or required by repository instructions. Keep each commit coherent and use the repository's message convention.
+- Run repository-specific sync tools only when they exist and the changed files require them.

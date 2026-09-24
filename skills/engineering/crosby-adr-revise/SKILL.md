@@ -1,6 +1,6 @@
 ---
 name: crosby-adr-revise
-description: 'Revise an existing ADR from review feedback by creating a change plan, letting the user review and edit it, and then applying the approved updates to the ADR.'
+description: Revise an existing ADR using review feedback while preserving its decision and local format. Use when the user requests changes to an ADR.
 ---
 
 # SKILL: crosby-adr-revise
@@ -43,10 +43,8 @@ If the feedback is vague, ask for a concise list of problems and the intended ou
 3. **Draft a concrete revision plan** with the smallest change set that addresses the feedback.
    - For each item, state the issue, the section to update, and the proposed change.
    - Keep the plan action-oriented and reviewable.
-4. **Pause for human review** before editing the ADR.
-   - Present the plan to the user and ask for edits or approval.
-   - The user may remove items, refine wording, add scope, or request a different sequencing.
-5. **Apply only the agreed plan**.
+4. **Resolve material decisions** before editing the ADR. Ask when feedback would change the decision outcome or leaves the requested scope unclear. Otherwise, use the plan to guide the authorized revision.
+5. **Apply the revision**.
    - Update the ADR in place.
    - Preserve the existing ADR structure unless the user explicitly wants a broader rewrite.
    - Keep the content factual and evidence-based.
@@ -56,12 +54,12 @@ If the feedback is vague, ask for a concise list of problems and the intended ou
 
 ## Required Output
 
-The skill should always do the following in order:
+For an authorized ADR revision:
 
 1. Summarize the ADR issues and the likely affected sections.
-2. Propose a revision plan in a format the user can review and edit.
-3. Wait for user feedback on the plan.
-4. After approval, update the ADR directly.
+2. Identify the smallest changes that address the feedback.
+3. Ask for direction only when a material decision remains unresolved.
+4. Update the ADR directly when the requested change is clear.
 5. Provide a brief final summary showing what changed.
 
 ## Suggested Plan Format
@@ -111,7 +109,7 @@ Summarize the intended outcome of the change in one sentence.
 Before finalizing the ADR revision, verify:
 
 - [ ] The plan clearly maps feedback to specific ADR sections.
-- [ ] The user had a chance to review and edit the plan before any ADR changes were made.
+- [ ] Any change to the decision outcome or unclear scope was resolved before editing.
 - [ ] The changes are limited to the agreed scope.
 - [ ] The ADR still reads as a coherent decision record.
 - [ ] Rationale, consequences, and next steps are updated consistently.
@@ -120,17 +118,17 @@ Before finalizing the ADR revision, verify:
 
 ## Output Format
 
-After reading the ADR and feedback, present:
+For a planning-only request, present:
 
 ### 🧭 Revision Plan
 
 - The plan as a reviewable markdown block.
 
-### ✅ Review Instructions
+### Review instructions
 
-- Ask the user to approve, revise, or expand the plan.
+- Ask for direction on material choices that prevent a sound revision.
 
-Then, after approval:
+For a revision request, present after editing:
 
 ### ✏️ ADR Updated
 
@@ -140,4 +138,4 @@ Then, after approval:
 
 ---
 
-**Constraint:** Do not change the ADR until the user has reviewed and approved the revision plan. The plan is the checkpoint; the ADR update is only the execution step after approval.
+**Constraint:** Do not change the ADR's decision outcome without explicit user approval. Preserve its structure unless the requested revision requires a change.

@@ -1,5 +1,5 @@
 interface:
   display_name: 'crosby-unslop'
-  short_description: 'Cut AI tells from any writing. Must always apply.'
+  short_description: 'Edit an existing draft to remove generic AI writing patterns while preserving meaning and voice.'
 policy:
   allow_implicit_invocation: false

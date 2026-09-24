@@ -9,7 +9,7 @@ Use these skills when a task matches the trigger described in the relevant `SKIL
 For a human or model, the pattern should look like this:
 
 - "Use the `crosby-audit-repo` skill to review the auth service directory."
-- "Run the `crosby-plan-iterative` skill for the migration work and break it into 3-5 steps."
+- "Run the `crosby-plan-iterative` skill for the migration work and break it into testable steps."
 - "Use the `crosby-conventional-commit` skill for this git diff before I commit."
 
 Good invocations are narrow, task-based, and output-oriented. They tell the skill:
@@ -38,13 +38,13 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
   - Typical invocation: "Use `crosby-issue-refine` to make this bug report ready for implementation planning."
   - Expected output: A scoped issue brief and a readiness decision.
 
-- `crosby-plan-iterative` — Breaks a large task into a short execution roadmap of 3-5 sequential, testable steps. Use before implementation starts.
+- `crosby-plan-iterative` — Breaks a large task into a short sequence of testable steps. Use before implementation starts.
   - Typical invocation: "Use the `crosby-plan-iterative` skill to break this API migration into a safe step-by-step roadmap."
   - Expected output: A short implementation plan with success criteria for each step.
 
-- `crosby-plan-execute` — Carries out the current step of an implementation plan while keeping scope tight and requiring human approval before moving on.
+- `crosby-plan-execute` — Carries out requested steps of an implementation plan with focused changes and verification.
   - Typical invocation: "Use the `crosby-plan-execute` skill for step 2 of the migration plan and keep the change scoped."
-  - Expected output: A small implementation change, verification notes, and a request for review before the next step.
+  - Expected output: Completed requested work, verification notes, and remaining risks.
 
 ### Diagnosis and verification
 
@@ -70,9 +70,9 @@ Avoid broad prompts like "fix the project"; prefer prompts that name the task an
   - Typical invocation: "Use the `crosby-adr-create` skill to draft an ADR for moving the service to async processing."
   - Expected output: A markdown ADR draft with context, decision rationale, options, consequences, and open questions.
 
-- `crosby-adr-revise` — Revises an existing ADR from reviewer feedback by creating a small, reviewable plan, waiting for user approval, and then updating the ADR in place.
-  - Typical invocation: "Use the `crosby-adr-revise` skill to address the comments on docs/adrs/20260820-foo.md and update the ADR only after I review the plan."
-  - Expected output: A concrete revision plan, user approval checkpoint, and the final ADR update with any remaining follow-up notes.
+- `crosby-adr-revise` — Revises an existing ADR from reviewer feedback while preserving the decision and local format.
+  - Typical invocation: "Use the `crosby-adr-revise` skill to address the comments on docs/adrs/20260820-foo.md."
+  - Expected output: A focused ADR update with any remaining follow-up notes.
 
 - `crosby-adr-review` — Reviews an existing ADR for comprehensiveness, completeness, clarity, simple language, and correct organization of supporting assets. Read-only — produces a structured report only.
   - Typical invocation: "Use the `crosby-adr-review` skill on docs/adrs/20260820-foo.md before I circulate it for approval."

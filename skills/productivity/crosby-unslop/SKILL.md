@@ -1,11 +1,11 @@
 ---
 name: crosby-unslop
-description: Cut AI tells from any writing. Must always apply.
+description: Edit an existing draft to remove generic AI writing patterns while preserving meaning and voice. Use when the user requests this cleanup.
 ---
 
 # Unslop
 
-Edit text to remove AI patterns.
+Edit supplied text to remove AI patterns. Preserve the writer's meaning, voice, required format, and quoted material.
 
 ## Process
 
@@ -33,13 +33,13 @@ Rule numbers are stable ids that other skills cite. A removed rule leaves a gap.
 
 ### Style
 
-13. **Em dash overuse.** Avoid em dashes entirely. Use periods or commas only (no parentheses, no en dashes, no hyphen-as-dash substitutes). If a thought needs separation, end the sentence or use a comma.
+13. **Em dash overuse.** Replace repeated or distracting em dashes when simpler punctuation reads better. Keep them when they suit the writer's voice or required format.
 14. **Colon overuse.** Colons are fine before a list or example. Not as mid-sentence connectors. "If you're coming from traditional automation: instead of registering event handlers, you describe conditions" adds nothing with the colon. Rewrite to let the point stand on its own without comparison framing. "Describing when the scheduler should fire works best as plain English." Same meaning, no crutch punctuation.
 15. **Boldface overuse.** Don't bold every proper noun or acronym.
 16. **Inline-header lists.** The tell is a bold label and colon that restates the line: "**Performance:** Performance improved...". Convert those to prose. A bold lead-in that ends in a period, names the item, and is followed by genuinely new detail ("**Schema in TypeScript.** Tables live in one file.") is fine, not a tell.
-17. **Title case headings.** Use sentence case.
+17. **Title case headings.** Use the document's existing heading style. Prefer sentence case when no style is established.
 18. **Decorative emojis.** Remove from headings and bullets.
-19. **Curly quotes.** Replace with straight quotes.
+19. **Curly quotes.** Follow the document's existing quote style unless the user requests a change.
 
 ### Communication artifacts
 

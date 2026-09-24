@@ -13,9 +13,8 @@ description: 'Generate a structured PR review outline comparing two branches. Us
 
 ## Procedure
 
-1. Identify `<SOURCE_BRANCH>` and `<TARGET_BRANCH>`.
-   1. If branches are not provided, run git branch --show-current to identify the source and assume main or develop as the target.
-2. Diff the branches and load the changed files.
+1. Identify the source and target from the request or PR metadata. For a local branch, use the current branch as source and inspect the configured default branch or upstream for the target. Ask only if the target remains ambiguous and would change the review.
+2. Review the merge-base diff and changed files. Include relevant uncommitted changes only when the user asks for them.
 3. Apply the review criteria below.
 4. Output the report in the format below. Do **not** write PR comments directly.
 
