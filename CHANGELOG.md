@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 3.1.1
+
+### Patch Changes
+
+- refactor: update skill descriptions and procedures for clarity and consistency across multiple skills
+
 ## 3.1.0
 
 ### Minor Changes
