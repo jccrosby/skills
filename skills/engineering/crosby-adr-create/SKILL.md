@@ -22,7 +22,7 @@ description: Draft an Architecture Decision Record (ADR) using the repository's 
 
 Reuse supplied context and inspect existing ADRs before asking for missing information. Gather:
 
-1. **Topic** — one-line description of the decision.
+1. **Core decision** — one sentence that states the choice the ADR must make.
 2. **Status** — use the repository's initial status, or `Proposed` when no convention exists.
 3. **Contributors** — who is authoring or reviewing, when the local format requires it.
 4. **Superseded ADRs** — any prior ADR this replaces or amends.
@@ -33,9 +33,11 @@ Do not fabricate contributors, dates, or ticket IDs. If unknown, use a placehold
 ## Procedure
 
 1. Locate existing ADRs, templates, indexes, and repository instructions. Follow their directory, filename, status, and section conventions when they are consistent.
-2. If no convention exists, use the fallback below and save under `docs/adrs/YYYYMMDD-descriptive-title.md`.
-3. Keep the record concise. Link evidence and related decisions instead of copying large source material.
-4. Stop after the draft is written. Do not attempt to publish, sync, or upload the file anywhere — the skill's output is markdown on disk, nothing else.
+2. Define the core decision before drafting. Use it as the boundary for every section.
+3. Include a related detail only when readers need it to understand, evaluate, or apply the core decision. Link or defer other details.
+4. If no convention exists, use the fallback below and save under `docs/adrs/YYYYMMDD-descriptive-title.md`.
+5. Keep the record concise. Link evidence and related decisions instead of copying large source material.
+6. Stop after the draft is written. Do not attempt to publish, sync, or upload the file anywhere — the skill's output is markdown on disk, nothing else.
 
 ## Required Sections
 
@@ -55,10 +57,11 @@ Use this fallback only when the repository has no established ADR format. Add or
 
 _Describe the current situation and **why** this decision is necessary._
 _State the problem plainly. Include measurements, screenshots, or links to reproductions where they exist. Do not editorialize._
+_Exclude background that does not affect the core decision._
 
 ## Decision
 
-_Describe the **what** and **how** of the change._
+_State the core decision. Include only the **what** and **how** needed to apply it._
 
 ### Rationale
 
@@ -101,6 +104,8 @@ Before handing the draft to the user, verify:
 
 - [ ] Title and filename follow the repository convention, or the dated fallback when no convention exists.
 - [ ] Status follows the repository convention, or is `Proposed` when using the fallback.
+- [ ] The ADR states one core decision and keeps every section focused on it.
+- [ ] Related details appear only when needed to understand, evaluate, or apply the core decision.
 - [ ] Context explains **why**, not what — no solutioning leaks in.
 - [ ] Decision covers **what** and **how**, and names a recommended option when alternatives exist.
 - [ ] Consequences lists both pros **and** cons. If the cons section is empty, push back — every decision has trade-offs.

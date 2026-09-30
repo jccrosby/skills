@@ -25,14 +25,14 @@ Before proposing edits, collect:
 
 1. **ADR path** — the exact ADR file to update.
 2. **Feedback source** — review comments, issue threads, notes, or a pasted summary of concerns.
-3. **Decision context** — whether the ADR is still the same decision or should be re-scoped.
+3. **Core decision** — one sentence that states the choice the ADR must preserve or clarify.
 4. **Edit boundaries** — whether the user wants only the ADR text updated, or also references / next steps / consequences.
 
 If the feedback is vague, ask for a concise list of problems and the intended outcome.
 
 ## Procedure
 
-1. **Read the ADR in full** and identify the relevant sections affected by the feedback.
+1. **Read the ADR in full** and identify its core decision and the sections affected by the feedback.
 2. **Classify the feedback** into one or more buckets:
    - clarification / wording
    - missing context
@@ -43,6 +43,7 @@ If the feedback is vague, ask for a concise list of problems and the intended ou
 3. **Draft a concrete revision plan** with the smallest change set that addresses the feedback.
    - For each item, state the issue, the section to update, and the proposed change.
    - Keep the plan action-oriented and reviewable.
+   - Remove or defer related details unless readers need them to understand, evaluate, or apply the core decision.
 4. **Resolve material decisions** before editing the ADR. Ask when feedback would change the decision outcome or leaves the requested scope unclear. Otherwise, use the plan to guide the authorized revision.
 5. **Apply the revision**.
    - Update the ADR in place.
@@ -99,6 +100,8 @@ Summarize the intended outcome of the change in one sentence.
 ## Decision Rules
 
 - Prefer the smallest change set that resolves the feedback.
+- Keep every revision focused on the core decision.
+- Include related details only when the core decision depends on them. Link or defer the rest.
 - Do not silently broaden scope beyond the ADR or the review comments.
 - Do not invent references, tickets, or dates unless the user supplies them.
 - If the feedback contradicts the current ADR decision, call that out explicitly and ask for direction before changing the decision itself.
@@ -111,6 +114,7 @@ Before finalizing the ADR revision, verify:
 - [ ] The plan clearly maps feedback to specific ADR sections.
 - [ ] Any change to the decision outcome or unclear scope was resolved before editing.
 - [ ] The changes are limited to the agreed scope.
+- [ ] The ADR centers on one core decision without unnecessary related details.
 - [ ] The ADR still reads as a coherent decision record.
 - [ ] Rationale, consequences, and next steps are updated consistently.
 - [ ] The final text contains no unsupported claims or invented references.

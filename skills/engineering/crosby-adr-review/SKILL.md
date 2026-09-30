@@ -9,7 +9,7 @@ Assess whether the record explains a consequential decision well enough for its 
 
 ## Establish the convention
 
-1. Read the ADR in full and identify its intended decision and status.
+1. Read the ADR in full and identify its core decision and status.
 2. Read repository instructions, the local ADR template, neighboring records, and any ADR index.
 3. When no local convention exists, use the fallback structure in `crosby-adr-create`.
 4. Open reachable supporting ADRs, tickets, images, and links. Note anything that cannot be verified.
@@ -27,6 +27,9 @@ Do not impose the fallback filename, status values, or section order when the re
 
 ### Decision quality
 
+- The ADR centers on one core decision.
+- Each detail helps readers understand, evaluate, or apply that decision.
+- Related design or implementation details are omitted, linked, or deferred unless the core decision depends on them.
 - Context explains the problem, constraints, and reason a decision is needed.
 - The decision says what will change and enough about how it applies to prevent conflicting interpretations.
 - Rationale uses evidence or concrete constraints rather than preference alone.
@@ -36,7 +39,8 @@ Do not impose the fallback filename, status values, or section order when the re
 
 ### Clarity and integrity
 
-- A reader can identify the decision without reconstructing it from background material.
+- A reader can identify the core decision without reconstructing it from background material.
+- Extra detail does not obscure the core decision or expand the ADR into related decisions.
 - Terms remain consistent and domain language is defined for the intended audience.
 - Claims, dates, contributors, tickets, and citations are supported rather than invented.
 - Related and superseded records link correctly and do not leave conflicting active guidance unexplained.
