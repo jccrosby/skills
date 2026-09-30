@@ -1,5 +1,11 @@
 # jccrosby-skills
 
+## 3.1.2
+
+### Patch Changes
+
+- [`f4591dd`](https://github.com/jccrosby/skills/commit/f4591ddf47bb5edaf496be9e25e59d083f02cd0d) Thanks [@jcrosby-mlb](https://github.com/jcrosby-mlb)! - Focus the ADR skills on the core decision
+
 ## 3.1.1
 
 ### Patch Changes
